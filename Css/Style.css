@@ -1,0 +1,642 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  width: 1647px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1800px) {
+  body{
+  width: 1184px;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+}
+
+main{
+  margin-bottom: 200px;
+}
+
+.headerMain{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100px;
+}
+
+.headerMain h1{
+  font-size: 50px;
+  color: #6E1EEB;
+  font-weight: bold;
+}
+
+.mainNav{
+  display: flex;
+  align-items: center;
+}
+
+.mainNav a{
+  font-size: 18px;
+  margin: 0px 10px;
+}
+
+button {
+  border: 1px solid #DA2032;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  transform: scale(0.9);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.creatButton{
+  color: #DA2032;
+  width: 340px;
+  height: 60px;
+  font-size: 18px;
+  background: none;
+}
+
+button:hover {
+  color: #fff;
+  background: #DA2032;
+}
+
+.mainContent{
+  background: #6F20EB;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imgContent{
+  width: 750px;
+  height: 551px;
+  background: url(../Img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.imgContent h2{
+  padding: 10px;
+  height: 45px;
+  background: #FFF023;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 168%;
+  display: flex;
+  align-items: center;
+  color: #6E1EEB;
+  margin: 2px;
+}
+
+.moneyContent{
+  height: 100%;
+  width: 45%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.price{
+  display: flex;
+  align-items: flex-end;
+  width: 90%;
+  height: 260px;
+  justify-content: space-between;
+}
+
+.priceText{
+  height: 80%;
+}
+
+
+.priceText p{
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+.priceText h2 {
+  font-size: 52px;
+  font-style: normal;
+font-weight: 600;
+}
+
+
+.circleContent{
+  width: 238px;
+  height: 238px;
+  position: relative;
+  transform: translateY(-30px);
+}
+
+.circleBackground{
+  width: 100%;
+  height: 100%;
+  border: 20px solid rgba(249, 237, 67, 0.25);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.circleRotate{
+  width: 110%;
+  height: 110%;
+  border: 20px solid #F9ED43;
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+
+.loader {
+  position: absolute;
+  margin: 0 auto;
+  stroke: #F9ED43;
+  width: 113%;
+  height: 113%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.circular {
+  height: 100%;
+  transform-origin: center center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(90deg);
+}
+
+.path {
+  stroke-dasharray: 2, 200;
+  stroke-dashoffset: 0;
+  animation: dash 1.5s ease-in-out, color 6s ease-in-out;
+  stroke-linecap: round;
+}
+
+
+.circleText{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.circleText h2{
+  color: #F9ED43;
+  font-size: 48px;
+}
+
+.circleText p{
+  font-weight: 600;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.contact p{
+  font-size: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.contactButt{
+  background: #DA2032;
+  color: #fff;
+  font-size: 18px;
+  width: 368px;
+  height: 70px;
+  letter-spacing: 0.1em;
+}
+
+.contactButt:hover{
+  opacity: 0.9;
+}
+
+.contactFacebook{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  width: 250px;
+  justify-content: space-around;
+}
+
+.aboutContent{
+  width: 1083px;
+  margin-top: 150px;
+  padding-left: 7%;
+}
+
+.aboutContent h2{
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 51px;
+  margin-bottom: 50px;
+  color: #6E1EEB;
+}
+
+.aboutContent p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 37px;
+  text-align:justify;
+  margin: 50px 0;
+}
+
+
+@media screen and (max-width: 1800px) {
+body{
+  width: 1184px;
+}
+
+header{
+  height: 200px;
+}
+.headerMain{height: 80px;}
+.headerMain h1{
+  font-size: 36px;
+}
+.mainNav a{
+  font-size: 12px;
+}
+
+.creatButton {
+  font-size: 14px;
+  width: 245px;
+  height: 50px;
+  text-transform:none;
+}
+
+.mainContent{
+  height: 360px;
+}
+
+.imgContent{
+  width: 539px;
+  height: 396px;
+}
+
+.imgContent h2{
+  font-size: 16px;
+  height: 32px;
+  font-weight: 600;
+}
+
+.priceText h2{
+  font-size: 36px;
+}
+
+.priceTextp p{
+  font-size: 16px;
+}
+.contact p{
+  font-size: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.contactFacebook{
+  font-size: 14px;
+  width: 280px;
+}
+
+.contactFacebook img{
+  width: 14px;
+  height: 25px;
+}
+
+.circleContent{
+  width: 188px;
+  height: 188px;
+  transform: translateY(-90px);
+}
+
+.circleText h2{
+  font-size: 48px;
+}
+
+.circleText p{
+  font-size: 14px;
+}
+
+.contactButt{
+  font-size: 13px;
+  height: 50px;
+  width: 236px;
+}
+
+.aboutContent{
+  width: 780px;
+  margin-top: 100px;
+  padding-left: 7%;
+}
+
+.aboutContent h2{
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.aboutContent p{
+  font-size: 16px;
+  margin: 20px 0;
+  font-weight: 300;
+  line-height: 37px;
+
+}
+}
+
+@media screen and (max-width: 1200px) {
+  header{
+    height: 200px;
+  }
+
+  body{
+    width: 830px;
+  }
+  .headerMain{
+    height: 70px;
+  }
+  .headerMain h1{
+    font-size: 30px;
+  }
+  .mainNav a{
+    font-size: 10px;
+  }
+
+  .creatButton {
+    font-size: 12px;
+    width: 191px;
+    height: 36px;
+  }
+
+  .mainContent{
+    height: 252px;
+  }
+
+  .imgContent{
+    width: 377px;
+    height: 278px;
+  }
+
+  .imgContent h2{
+    font-size: 14px;
+    height: 23px;
+    font-weight: 600;
+  }
+
+  .price{
+    height: 160px;
+  }
+
+  .priceText h2{
+    font-size: 28px;
+  }
+
+  .priceText p{
+    font-size: 12px;
+    margin: 5px 0px;
+  }
+
+  .contact p{
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+  }
+
+  .contactButt{
+    width: 245.44px;
+    height: 34.04px;
+    font-size: 10px;
+    letter-spacing: 0.05em;
+  }
+
+  .contactFacebook{
+    font-size: 10px;
+    width: 200px;
+  }
+
+  .contactFacebook img{
+    width: 9.81px;
+height: 17.53px;
+  }
+
+  .circleContent{
+    width: 120px;
+    height: 119px;
+    transform: translateY(-50px);
+  }
+
+  .circleBackground{
+    border: 15px solid rgba(249, 237, 67, 0.25);
+  }
+
+  .circleRotate{
+    border: 15px solid #F9ED43;
+  }
+
+  .circleText{
+    width: 60px;
+    height: 60px;
+  }
+
+  .circleText h2{
+    font-size: 30px;
+  }
+
+  .circleText p{
+    font-size: 8px;
+  }
+
+  .contactButt{
+    font-size: 10px;
+  }
+
+  .aboutContent{
+    width: 617px;
+    margin-top: 100px;
+  }
+
+  .loader {
+    stroke: #F9ED43;
+    width: 110%;
+    height: 110%;
+  }
+
+  #circle{
+    stroke-width: 6.0;
+  }
+
+  .aboutContent h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .aboutContent p{
+    font-size: 12px;
+    margin: 10px 0;
+    line-height: 24px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  header{
+    height: 140px;
+    width: 278px;
+    padding-left: 0%;
+    margin: 0 auto;
+  }
+
+  .headerMain{
+    height: 50px;
+  }
+
+  .headerMain h1{
+    font-size: 22px;
+  }
+
+  .creatButton{
+    display: none;
+  }
+
+  body{
+    width: 100%;
+  }
+
+  .mainContent{
+    flex-direction: column;
+    height: 478px;
+  }
+
+  .imgContent{
+    width: 278px;
+    height: 278px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    transform: translateY(-15px);
+  }
+  .imgContent h2{
+    font-size: 12px;
+    height: 17px;
+    font-weight: 600;
+  }
+  .moneyContent{
+    width:310px;
+  }
+  .price{
+    height: 160px;
+    align-items: center;
+  }
+  .priceText{
+    height: auto;
+  }
+  .priceText h2{
+    font-size: 26px;
+  }
+
+  .priceText p{
+    font-size: 14px;
+  }
+
+  .circleContent{
+    width: 120px;
+    height: 120px;
+    transform: translateY(0px);
+  }
+  .contact{
+    flex-direction: column;
+  }
+
+  .contact p{
+    font-size: 20px;
+    margin: 5px 0px;
+    transform: rotate(90deg);
+  }
+
+  .contactButt{
+    width: 165.44px;
+    height: 35.05px;
+  }
+
+  .contactFacebook{
+    font-size: 10px;
+    width: 160px;
+  }
+
+  .aboutContent{
+    width: 278px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  .aboutContent h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .aboutContent p{
+    font-size: 10px;
+    margin: 10px 0;
+    line-height: 27px;
+  }
+}
+
+
+
+/*Preloader*/
+
+
+@media screen and (max-width: 1800px) {}
+@media (max-width: 1200px) {}
+@media (max-width: 900px) {}
